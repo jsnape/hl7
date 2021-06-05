@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+    <Words>
+        <Recognized>
+            <Word>Api</Word>
+            <Word>Wtd</Word>
+            <Word>Etl</Word>
+            <Word>Csv</Word>
+            <Word>XPath</Word>
+            <Word>OK</Word>
+            <Word>Rota</Word>
+            <Word>Fte</Word>
+            <Word>XUnit</Word>
+            <Word>Secondment</Word>
+            <Word>Esp</Word>
+            <Word>Auth</Word>
+            <Word>Uom</Word>
+            <Word>PowerShell</Word>
+            <Word>Callback</Word>
+            <Word>Callbacks</Word>
+            <Word>Catalog</Word>
+            <Word>aura</Word>
+            <Word>auracube</Word>
+            <Word>asazure</Word>
+            <Word>oauth</Word>
+            <Word>ietf</Word>
+            <Word>PowerShell</Word>
+            <Word>Mvc</Word>
+            <Word>IaaS</Word>
+            <Word>PaaS</Word>
+            <Word>ms</Word>
+        </Recognized>
+        <Deprecated>
+            <Term PreferredAlternate="CanRetry">Retryable</Term>
+            <Term PreferredAlternate="Initialize">Initialise</Term>
+            <Term PreferredAlternate="Initialization">Initialisation</Term>
+        </Deprecated>
+        <!--
+    <Unrecognized>
+      <Word>knokker</Word>
+    </Unrecognized>
+    -->
+    <Compound>
+      <Term CompoundAlternate="AuraCube">AuraCube</Term>
+    </Compound>
+    <DiscreteExceptions>
+        <Term>Id</Term>
+        <Term>XPath</Term>
+    </DiscreteExceptions>
+    </Words>
+    <Acronyms>
+        <CasingExceptions>
+            <Acronym>XPath</Acronym>
+        </CasingExceptions>
+    </Acronyms>
+</Dictionary>
