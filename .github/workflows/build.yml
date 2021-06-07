@@ -28,4 +28,4 @@ jobs:
       run: dotnet test TinMonkey.HL7.sln --configuration Release --no-build --verbosity normal
 
     - name: Generate docs
-      run: livingdoc test-assembly .\**\*.Specs.dll -t .\**\TestExecution.json --output .\doc\LivingDoc.html
+      run: dotnet livingdoc test-assembly .\**\*.Specs.dll -t .\**\TestExecution.json --output .\doc\LivingDoc.html
