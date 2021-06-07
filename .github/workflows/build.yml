@@ -38,8 +38,7 @@ jobs:
     - name: Generate docs
       run: dotnet livingdoc feature-folder TinMonkey.HL7.Core.Specs -t **/TestExecution.json --output docs/index.html
 
-    - name: Commit doc changes
-      uses: quizlet/commit-changes@[ref]
+    - name: push
+      uses: actions-x/commit@v2
       with:
-        message: Automated commit
-        glob-patterns: 'docs/**'
+        files: docs/index.html
