@@ -31,4 +31,4 @@ jobs:
       run: dotnet tool restore
 
     - name: Generate docs
-      run: dotnet livingdoc feature-folder .\\TinMonkey.HL7.Core.Specs -t .\\**\\TestExecution.json --output .\\docs\\index.html
+      run: dotnet livingdoc feature-folder TinMonkey.HL7.Core.Specs -t **/TestExecution.json --output docs/index.html
