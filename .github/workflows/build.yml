@@ -27,5 +27,8 @@ jobs:
     - name: Test
       run: dotnet test TinMonkey.HL7.sln --configuration Release --no-build --verbosity normal
 
+    - name: Restore tools
+      run: dotnet tool restore
+
     - name: Generate docs
       run: dotnet livingdoc test-assembly .\**\*.Specs.dll -t .\**\TestExecution.json --output .\doc\LivingDoc.html
