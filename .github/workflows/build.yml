@@ -3,8 +3,13 @@ name: .NET
 on:
   push:
     branches: [ main ]
+    paths-ignore:
+      - 'docs/**'
+
   pull_request:
     branches: [ main ]
+    paths-ignore:
+    - 'docs/**'
 
 jobs:
   build:
@@ -32,3 +37,9 @@ jobs:
 
     - name: Generate docs
       run: dotnet livingdoc feature-folder TinMonkey.HL7.Core.Specs -t **/TestExecution.json --output docs/index.html
+
+    - name: Commit doc changes
+      uses: quizlet/commit-changes@[ref]
+      with:
+        message: Automated commit
+        glob-patterns: 'docs/**'
