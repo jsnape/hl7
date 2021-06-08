@@ -38,7 +38,7 @@ jobs:
     - name: Generate docs
       run: dotnet livingdoc feature-folder TinMonkey.HL7.Core.Specs -t **/TestExecution.json --output docs/index.html
 
-    - name: push
+    - name: Commit docs changes to repo
       uses: actions-x/commit@v2
       with:
         files: docs/index.html
