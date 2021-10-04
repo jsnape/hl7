@@ -10,10 +10,15 @@
     <PackageTags>HL7</PackageTags>
     <Nullable>enable</Nullable>
     <DocumentationFile>bin\$(Configuration)\TinMonkey.HL7.Core.xml</DocumentationFile>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
-    <CodeAnalysisDictionary Include="..\CodeAnalysisDictionary.xml" Link="CodeAnalysisDictionary.xml" />
+    <Compile Remove="HL7Span.cs" />
+    <Compile Remove="HL7Tokenizer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <AdditionalFiles Include="..\stylecop.json" Link="stylecop.json" />
   </ItemGroup>
 

@@ -24,7 +24,7 @@ insert_final_newline = false
 # Organize usings
 dotnet_separate_import_directive_groups = false
 dotnet_sort_system_directives_first = true
-file_header_template = <copyright file="{fileName}" company="Hitachi Vantara">\nTHIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND,\nEITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.\n</copyright>
+file_header_template = <copyright file="{fileName}" company="TinMonkey">\nTHIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND,\nEITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.\n</copyright>
 
 # this. and Me. preferences
 dotnet_style_qualification_for_event = true:silent

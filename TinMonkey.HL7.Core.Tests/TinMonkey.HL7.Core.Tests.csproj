@@ -3,8 +3,10 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <Nullable>enable</Nullable>
     <DocumentationFile>bin\$(Configuration)\TinMonkey.HL7.Core.Tests.xml</DocumentationFile>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>

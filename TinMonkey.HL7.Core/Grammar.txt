@@ -1,0 +1,47 @@
+<message> ::= <segment> [{<segment>}]
+
+<segment> ::= <field> [{<field>}] "\r"
+
+<field> ::= <value> | <component> | <repetition>
+
+<component> ::= (<value> | <component>)
+
+<value> ::= {<character>}
+
+PID||E|2000^2012^01||SUR|||7|A0|
+
+FieldSeparator >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> E >>> FieldSeparator
+
+Value >>> FieldSeparator >>> ComponentSeparator
+
+FieldSeparator >>> 2000 >>> ComponentSeparator
+Value >>> ComponentSeparator >>> ComponentSeparator
+ComponentSeparator >>> 2012 >>> ComponentSeparator
+Value >>> ComponentSeparator >>> FieldSeparator
+ComponentSeparator >>> 01 >>> FieldSeparator
+
+Value >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> SUR >>> FieldSeparator
+Value >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> 7 >>> FieldSeparator
+Value >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> A0 >>> FieldSeparator
+Value >>> FieldSeparator >>> EndOfBuffer
+
+
+
+FieldSeparator >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> E >>> FieldSeparator
+FieldSeparator >>> 2000 >>> ComponentSeparator
+ComponentSeparator >>> 2012 >>> ComponentSeparator
+ComponentSeparator >>> 01 >>> FieldSeparator
+FieldSeparator >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> SUR >>> FieldSeparator
+FieldSeparator >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> FieldSeparator >>> FieldSeparator
+FieldSeparator >>> 7 >>> FieldSeparator
+FieldSeparator >>> A0 >>> FieldSeparator

@@ -59,5 +59,50 @@ namespace TinMonkey.HL7.Core.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Escape sequence missing sequence end..
+        /// </summary>
+        internal static string ParseErrorIncompleteEscapeSequence {
+            get {
+                return ResourceManager.GetString("ParseErrorIncompleteEscapeSequence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MSH segment missing field separator or encoding characters..
+        /// </summary>
+        internal static string ParseErrorMshSegmentIncomplete {
+            get {
+                return ResourceManager.GetString("ParseErrorMshSegmentIncomplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HL7 message does not start with MSH segment..
+        /// </summary>
+        internal static string ParseErrorMshSegmentMissing {
+            get {
+                return ResourceManager.GetString("ParseErrorMshSegmentMissing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current segment label is not 3 characters..
+        /// </summary>
+        internal static string ParseErrorSegmentLabelTooShort {
+            get {
+                return ResourceManager.GetString("ParseErrorSegmentLabelTooShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current segment is missing field separator after segment label..
+        /// </summary>
+        internal static string ParseErrorSegmentMissingFields {
+            get {
+                return ResourceManager.GetString("ParseErrorSegmentMissingFields", resourceCulture);
+            }
+        }
     }
 }
