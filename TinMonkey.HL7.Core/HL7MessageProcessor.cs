@@ -12,6 +12,9 @@ namespace TinMonkey.HL7
     /// <seealso cref="IHL7StreamProcessor" />
     public class HL7MessageProcessor : IHL7StreamProcessor
     {
+        /// <summary>The MSH segment label bytes.</summary>
+        private static readonly byte[] MshSegmentLabelBytes = Encoding.ASCII.GetBytes(HL7Constants.MshSegmentLabel);
+
         /// <summary>The segments.</summary>
         private readonly List<HL7Segment> segments = new ();
 
@@ -67,7 +70,7 @@ namespace TinMonkey.HL7
         /// <param name="lineNumber">The line number.</param>
         public void OnNext(in ReadOnlySpan<byte> line, int lineNumber)
         {
-            if (line.StartsWith(HL7Constants.MshSegmentLabelBytes))
+            if (line.StartsWith(MshSegmentLabelBytes))
             {
                 this.MessageComplete();
 

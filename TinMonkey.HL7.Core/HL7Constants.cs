@@ -27,8 +27,5 @@ namespace TinMonkey.HL7
 
         /// <summary>The delimiter length.</summary>
         public const int DelimiterLength = 5;
-
-        /// <summary>The MSH segment label bytes.</summary>
-        public static readonly byte[] MshSegmentLabelBytes = Encoding.ASCII.GetBytes(HL7Constants.MshSegmentLabel);
     }
 }

@@ -12,6 +12,9 @@ namespace TinMonkey.HL7
     /// <summary>The HL7 segment parser.</summary>
     internal ref struct HL7SegmentParser
     {
+        /// <summary>The MSH segment label bytes.</summary>
+        private static readonly byte[] MshSegmentLabelBytes = Encoding.ASCII.GetBytes(HL7Constants.MshSegmentLabel);
+
         /// <summary>The encoding.</summary>
         private readonly HL7Encoding encoding;
         private readonly ReadOnlySpan<byte> buffer;
@@ -43,7 +46,7 @@ namespace TinMonkey.HL7
             var fields = new List<HL7Field>();
             var localBuffer = this.buffer.Slice(HL7Constants.SegmentLabelLength + 1);
 
-            if (this.Label.StartsWith(HL7Constants.MshSegmentLabelBytes))
+            if (this.Label.StartsWith(MshSegmentLabelBytes))
             {
                 var delimiters = Encoding.UTF8.GetString(
                     this.buffer.Slice(HL7Constants.SegmentLabelLength, HL7Constants.DelimiterLength));
