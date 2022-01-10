@@ -20,7 +20,7 @@
     <PackageReference Include="Microsoft.CodeCoverage" Version="17.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
-    <PackageReference Include="SpecFlow.xUnit" Version="3.9.22" />
+    <PackageReference Include="SpecFlow.xUnit" Version="3.9.40" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
