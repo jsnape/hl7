@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <PackageReference Include="FsCheck.Xunit" Version="2.16.5" />
-    <PackageReference Include="Microsoft.CodeCoverage" Version="17.2.0" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="17.4.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
     <PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
